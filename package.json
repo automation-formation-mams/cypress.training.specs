@@ -1,0 +1,21 @@
+{
+  "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^20.0.2",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.0",
+    "cypress": "^13.6.6",
+    "cypress-iframe": "^1.0.1",
+    "cypress-xpath": "^2.0.1",
+    "dotenv": "^16.4.5",
+    "jsonpath": "^1.1.1"
+  },
+  "scripts": {
+    "cypress:open": "cypress open",
+    "cypress:open:prod": "SET ENV=prod&& cypress open",
+    "run-smoke-tag": "npx cypress run --env TAGS=\"@SmokeTest\" --browser chrome",
+    "run-all-features": "npx cypress run  --browser chrome"
+  },
+  "cypress-cucumber-preprocessor": {
+    "stepDefinitions": "cypress/support/step_definitions/**/**.step.{js,ts}",
+    "filterSpecs": true
+  }
+}

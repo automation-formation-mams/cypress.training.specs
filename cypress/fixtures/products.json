@@ -1,0 +1,34 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "name": "Blue Top",
+            "price": "Rs. 500",
+            "brand": "Polo",
+            "category": {
+                "gender": "Women",
+                "type": "Tops"
+            }
+        },
+        {
+            "id": 2,
+            "name": "Men Tshirt",
+            "price": "Rs. 400",
+            "brand": "H&M",
+            "category": {
+                "gender": "Men",
+                "type": "Tshirts"
+            }
+        },
+        {
+            "id": 3,
+            "name": "Sleeveless Dress",
+            "price": "Rs. 1000",
+            "brand": "Madame",
+            "category": {
+                "gender": "Women",
+                "type": "Dress"
+            }
+        }
+    ]
+}
